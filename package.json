@@ -1,29 +1,29 @@
 {
-  "name": "react-icon-base",
+  "name": "preact-icon-base",
   "version": "2.0.3",
   "description": "base element for react-icons",
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
     "build": "babel index.js --out-dir lib",
-    "prepublish": "npm test && npm run build",
+    "prepublish": "npm run build",
     "test": "npm run lint && mocha test --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/gorangajic/react-icon-base.git"
+    "url": "git+ssh://git@github.com/efflam/preact-icon-base.git"
   },
   "keywords": [
     "react",
     "icon",
     "base"
   ],
-  "author": "Goran Gajic <fero.null@gmail.com>",
+  "author": "Efflam <efflam.daniel@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gorangajic/react-icon-base/issues"
+    "url": "https://github.com/efflam/preact-icon-base/issues"
   },
-  "homepage": "https://github.com/gorangajic/react-icon-base#readme",
+  "homepage": "https://github.com/efflam/preact-icon-base#readme",
   "devDependencies": {
     "babel": "6.5.2",
     "babel-cli": "6.7.5",
@@ -52,25 +52,5 @@
       "it"
     ],
     "parser": "babel-eslint"
-  },
-  "config": {
-    "ghooks": {
-      "commit-msg": "validate-commit-msg"
-    },
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    },
-    "validate-commit-msg": {
-      "types": [
-        "issue",
-        "master",
-        "revert"
-      ],
-      "warnOnFail": false,
-      "maxSubjectLength": 100,
-      "subjectPattern": ".+",
-      "subjectPatternErrorMsg": "subject does not match subject pattern!",
-      "helpMessage": ""
-    }
   }
 }
